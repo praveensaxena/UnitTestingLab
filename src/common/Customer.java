@@ -25,7 +25,9 @@ public class Customer {
     }
 
     public void setAddress(String address) {
+
         if(address == null || address.length() == 0){
+
             throw new IllegalArgumentException("Address cannot be null");
         }
         this.address = address;

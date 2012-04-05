@@ -17,8 +17,7 @@ public class LineItem {
     private double extPrice;
     private static final double MAX_UNIT_PRICE = 9999.99;
 
-    public LineItem() {
-    }
+    public LineItem() {}
 
     public LineItem(String prodId, String prodName, double unitCost, double qty) {
         id = new Random((new Date()).getTime()).nextLong();
@@ -96,6 +95,7 @@ public class LineItem {
     }
 
     public void setUnitCost(double unitCost) {
+
         if (unitCost <= 0 || unitCost > MAX_UNIT_PRICE) {
             throw new IllegalArgumentException("Unit cost "
                     + "must be between .01 and " + MAX_UNIT_PRICE);
@@ -103,6 +103,7 @@ public class LineItem {
 
         this.unitCost = unitCost;
     }
+
 
     public String toString() {
         return prodName + ", " + qty + ", " + extPrice;

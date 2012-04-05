@@ -32,10 +32,13 @@ public class Product {
     }
 
     public void setProdId(String prodId) {
+<<<<<<< HEAD
         if(prodId == null || prodId.length() == 0){
             throw new IllegalArgumentException("Product ID cannot be null");
         }
         
+=======
+>>>>>>> cbfb3c7b2bc722ce82f0d9a54365bcd832801a96
         this.prodId = prodId;
     }
 
