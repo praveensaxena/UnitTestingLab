@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package common;
 
 import org.junit.*;
@@ -9,7 +6,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author e1031248
+ * @author Praveen Saxena
  */
 public class LineItemTest {
     
